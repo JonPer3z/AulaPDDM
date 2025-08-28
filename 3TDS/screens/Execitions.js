@@ -5,6 +5,7 @@ import Toast from "react-native-toast-message";
 export default function TratamentoExcecoes() {
   const [valor, setValor] = useState("");
 
+
   const handleDivisao = () => {
     try {
       const numero = parseFloat(valor);
@@ -38,7 +39,10 @@ export default function TratamentoExcecoes() {
         value={valor}
         onChangeText={setValor}
       />
-      <Button title="Dividir" onPress={handleDivisao} />
+      <View style={styles.buttons}>
+        <Button title="Dividir" onPress={handleDivisao} />
+        <Button title="Limpar" onPress={() => setValor('')} />
+      </View>
       <Toast />
     </View>
   );
@@ -57,5 +61,11 @@ const styles = StyleSheet.create({
     padding: 10,
     marginBottom: 20,
     width: "80%",
+  },
+  buttons: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: '3%',
   },
 });

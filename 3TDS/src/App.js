@@ -11,6 +11,8 @@ import Modal from "../screens/Modal";
 import Navebar from "../screens/Navebar";
 import ControlElements from "../screens/ControlElements";
 import Execitions from "../screens/Execitions";
+import Manipulacao from "../screens/Manipulacao";
+import InputOutput from "../screens/InputOutput";
 
 const Drawer = createDrawerNavigator();
 
@@ -19,7 +21,7 @@ export default function App() {
     <NavigationContainer>
       <Drawer.Navigator initialRouteName="Home">
         <Drawer.Screen name="Home" component={HomeScreen}></Drawer.Screen>
-        <Drawer.Screen name="Struture"component={StructureLayout}></Drawer.Screen>
+        <Drawer.Screen name="Struture" component={StructureLayout}></Drawer.Screen>
         <Drawer.Screen name="Types" component={TypesLayout}></Drawer.Screen>
         <Drawer.Screen name="Manager" component={ManagerLayout}></Drawer.Screen>
         <Drawer.Screen name="Display" component={DisplayComponents}></Drawer.Screen>
@@ -27,6 +29,8 @@ export default function App() {
         <Drawer.Screen name="Navebar" component={Navebar}></Drawer.Screen>
         <Drawer.Screen name="Controle" component={ControlElements}></Drawer.Screen>
         <Drawer.Screen name="Exeção" component={Execitions}></Drawer.Screen>
+        <Drawer.Screen name="Manipulação" component={Manipulacao}></Drawer.Screen>
+        <Drawer.Screen name="Entrada e Saída" component={InputOutput}></Drawer.Screen>
       </Drawer.Navigator>
     </NavigationContainer>
   );
