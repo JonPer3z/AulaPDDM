@@ -15,6 +15,7 @@ import Manipulacao from "../screens/Manipulacao";
 import InputOutput from "../screens/InputOutput";
 import TratamentoGestual from "../screens/TratamentoGestual"; 
 import TratamentoGestual2 from "../screens/TratamentoGestual2"; 
+import Gps from "../screens/Gps"; 
 
 const Drawer = createDrawerNavigator();
 
@@ -35,6 +36,7 @@ export default function App() {
         <Drawer.Screen name="Entrada e Saída" component={InputOutput}></Drawer.Screen>
         <Drawer.Screen name="Tratamento Gestual" component={TratamentoGestual}></Drawer.Screen>
         <Drawer.Screen name="Tratamento Gestual2" component={TratamentoGestual2}></Drawer.Screen>
+        <Drawer.Screen name="GPS" component={Gps}></Drawer.Screen>
       </Drawer.Navigator>
     </NavigationContainer>
   );
